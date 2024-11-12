@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
-import { MenuComponent } from '../menu/menu.component';
-import { NewProductComponent } from '../new-product/new-product.component';
-import { TopSellerComponent } from '../top-seller/top-seller.component';
-import { FooterComponent } from '../footer/footer.component';
+import { RouterOutlet } from '@angular/router';
+
 
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MenuComponent,NewProductComponent,TopSellerComponent,FooterComponent],
+  imports: [RouterOutlet],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

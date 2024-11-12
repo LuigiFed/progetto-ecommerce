@@ -5,8 +5,16 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './pagina-dunk.component.html',
-  styleUrl: './pagina-dunk.component.scss'
+  styleUrls: ['./pagina-dunk.component.scss']
 })
 export class PaginaDunkComponent {
 
+
+  mainImage: string = 'immagini/4.jpg';
+
+  updateMainImage(imageUrl: string): void {
+    this.mainImage = imageUrl;
+  }
+
 }
+

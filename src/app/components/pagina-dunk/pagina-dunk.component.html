@@ -1,1 +1,87 @@
-<p>pagina-dunk works!</p>
+
+<section class="messaggio-carrello">
+    <i id="aggiunto"class="fa-solid fa-circle-check"></i>
+    <a href=""><i id="chiudi" class="fa-solid fa-circle-xmark"></i></a>
+    <h2>Aggiunto al carrello</h2>
+    <img class= "img-cart" src="immagini/MATERIALE_prova_pratica/MATERIALE/Scarpa/4.jpg" alt="">
+    <div class="contenuto">
+    <h3>Nike Dunk Low</h3>
+    <p>Scarpa-Uomo</p>
+    <p class="taglia">Taglia/Misura <span id="taglia">42</span></p>
+    <span class="prezzo">119.99 &euro;</span>
+    </div>
+    <button class="visualizza-carrello"><a href="">Visualizza carrello <span>(0)</span></a></button>
+    <button class="pagamento"><a href="">Pagamento</a></button>
+</section>
+
+<section class="shoegrid">
+
+    <div class="img-dunk">
+        <img src="immagini/1.jpg" alt="" class="thumbnail" (mouseenter)="updateMainImage('immagini/1.jpg')">
+        <img src="immagini/2.jpg" alt="" class="thumbnail" (mouseenter)="updateMainImage('immagini/2.jpg')">
+        <img src="immagini/3.jpg" alt="" class="thumbnail" (mouseenter)="updateMainImage('immagini/3.jpg')">
+        <img src="immagini/4.jpg" alt="" class="thumbnail" (mouseenter)="updateMainImage('immagini/4.jpg')">
+        <img src="immagini/5.jpg" alt="" class="thumbnail" (mouseenter)="updateMainImage('immagini/5.jpg')">
+        <img src="immagini/6.jpg" alt="" class="thumbnail" (mouseenter)="updateMainImage('immagini/6.jpg')">
+        <img src="immagini/7.jpg" alt="" class="thumbnail" (mouseenter)="updateMainImage('immagini/7.jpg')">
+        <img src="immagini/8.jpg" alt="" class="thumbnail" (mouseenter)="updateMainImage('immagini/8.jpg')">
+    </div>
+    
+    
+    <div class="box-img">
+        <img [src]="mainImage" alt="Main Image" class="main-image">
+    </div>
+    
+    <div class="testo">
+        <h2>Nike Dunk Low</h2>
+        <p>Scarpa - Uomo</p>
+        <p>119.99 &euro;</p>
+        <div class="img-s">
+            <img style="margin-right: 4px;" src="immagini/4.jpg" alt="" class="small-img" (mouseenter)="updateMainImage('immagini/4.jpg')">
+            <img src="immagini/6.1.jpg" alt="" class="small-img" (mouseenter)="updateMainImage('immagini/6.1.jpg')">
+        </div>
+    </div>
+    
+    <div class="taglie ">
+        <div class="scegli-taglia">
+        <p>Scegli la taglia/misura</p>
+        <p>Guida alle taglie e alle misure</p></div>
+        <div class="griglia-taglie" id="griglia-taglie">
+            <li><a href="">EU 38</a></li>
+            <li><a href="">EU 38.5</a></li>
+            <li><a href="">EU 39</a></li>
+            <li><a href="">EU 40</a></li>
+            <li><a href="">EU 40.5</a></li>
+            <li><a href="">EU 41</a></li>
+            <li><a href="">EU 42</a></li>
+            <li><a href="">EU 42.5</a></li>
+            <li><a href="">EU 43</a></li>
+            <li><a href="">EU 44</a></li>
+            <li><a href="">EU 44.5</a></li>
+            <li><a href="">EU 45</a></li>
+            <li><a href="">EU 45.5</a></li>
+            <li><a href="">EU 46</a></li>
+            <li><a href="">EU 47</a></li>
+    </div>
+    <div class="pulsante">
+        <button id="aggiungi-al-carrello" class="pulsante1">Aggiungi al carrello</button>
+    <button class="pulsante2">Aggiungi ai preferiti</button>
+    </div>
+
+
+    <div class="paragrafo mt-5 mb-5">
+    <h3>Ritiro gratuito</h3>
+    <a href="">Trova un negozio</a>
+
+    <p>Opzione "Clicca e ritira" disponibile al pagamento</p>
+
+    <p>Puoi sempre contare su un classico. Gli iconici blocchi di colore si uniscono a materiali pregiati e morbida imbottitura per un comfort rivoluzionario che dura a lungo. Le possibilità sono infinite: come indosserai le tue Dunk?
+
+
+        <li>Colore mostrato in foto: Bianco/Bianco/Nero</li>
+        <li>Stile: FQ8249-100</li>
+    </p>
+
+    <a href="">Visualizza dettagli prodotto</a>
+
+    

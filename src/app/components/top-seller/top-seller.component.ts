@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-top-seller',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   templateUrl: './top-seller.component.html',
   styleUrls: ['./top-seller.component.scss']
 })
@@ -24,7 +26,7 @@ item: any;
 
   getRouterLink(topSeller: any): string {
     if (topSeller.title === 'Dunk') {
-      return '/home/pagina-dunk'; // 
+      return '/pagina-dunk'; 
     }
     return ''; 
   }
