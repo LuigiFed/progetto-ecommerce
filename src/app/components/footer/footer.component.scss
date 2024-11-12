@@ -1,0 +1,110 @@
+.footer {
+    display: grid;
+    margin: 0 30px 0 30px;
+  
+    a {
+      text-decoration: none;
+      color: rgb(130, 130, 130);
+    }
+  
+    .f1 {
+      border-top: grey solid 1px;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      grid-row: 1/2;
+    }
+  }
+  
+  .f2, .f3, .f4 {
+    border-top: grey solid 1px;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    grid-row: 1/2;
+  }
+  
+  .lingua {margin-top: 40px;}
+  
+  .footer .f1 ul, .f2 ul, .f3 ul, .f4 ul {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 30px 0 30px;
+    padding: 0;
+    gap: 10px;
+    list-style: none; 
+  }
+  
+  .subfooter {
+    margin: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  
+    a {
+      text-decoration: none;
+      color: rgb(130, 130, 130);
+    }
+  
+    ul {
+      list-style: none; 
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      color: rgb(130, 130, 130);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  
+    .sottomenu {
+      display: none;
+      position: absolute;
+      z-index: 1000;
+      width: auto;
+      padding: 10px 0;
+      transform: translate(0, -100%);
+      background-color: white;
+      
+      li {
+        position: relative;
+        font-size: 17px;
+        list-style-type: none;
+      }
+  
+      a {
+        padding: 10px;
+        text-decoration: none;
+      }
+  
+      ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 5px;
+        list-style: none; 
+      }
+    }
+  
+    ul li:hover .sottomenu {
+      display: block;
+      border: solid 1px rgba(161, 161, 161, 0.555);
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .sottomenu {
+      ul li:hover {
+        background-color: rgba(181, 181, 181, 0.525);
+      }
+  
+      li a:hover {
+        color: black;
+      }
+    }
+  }
+  
